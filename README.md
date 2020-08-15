@@ -1,7 +1,8 @@
 ## Sofian's build of DWM - dynamic window manager
 dwm is an extremely fast, small, and dynamic window manager for X.
 I've added the following patches
-- vanitygaps 
+-Vanitygaps: Gaps allowed across all layouts.
+-Sticky: Windows can be made sticky (super+s).
 
 ## Requirements
 
