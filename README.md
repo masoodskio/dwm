@@ -3,7 +3,7 @@ dwm is an extremely fast, small, and dynamic window manager for X.
 I've added the following patches
 -Vanitygaps: Gaps allowed across all layouts.
 -Sticky: Windows can be made sticky (super+s).
-
+-True fullscreen (super+f) and prevents focus shifting.
 ## Requirements
 
 In order to build dwm you need the Xlib header files.
