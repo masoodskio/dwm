@@ -71,7 +71,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
-
+#include "shiftview.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -110,6 +110,14 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_f,      togglefullscr,  {0} },
 	{ MODKEY,                       XK_s,      togglesticky,   {0} },
+	{ MODKEY,			XK_semicolon,	   shiftview,	{ .i = -1 } },
+	{ MODKEY,			XK_apostrophe,	   shiftview,	{ .i = +1 } },
+	{ MODKEY|ShiftMask,		XK_semicolon,	shifttag,	{ .i = -1 } },
+	{ MODKEY|ShiftMask,		XK_apostrophe,	shifttag,	{ .i = +1 } },
+	{ MODKEY,			XK_Page_Up,	shiftview,	{ .i = -1 } },
+	{ MODKEY|ShiftMask,		XK_Page_Up,	shifttag,	{ .i = -1 } },
+	{ MODKEY,			XK_Page_Down,	shiftview,	{ .i = +1 } },
+	{ MODKEY|ShiftMask,		XK_Page_Down,	shifttag,	{ .i = +1 } },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },

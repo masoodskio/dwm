@@ -4,7 +4,9 @@ I've added the following patches
 -Vanitygaps: Gaps allowed across all layouts.
 -Sticky: Windows can be made sticky (super+s).
 -True fullscreen (super+f) and prevents focus shifting.
--Stacker: Move windows up the stack manually (super-K/J).
+-Stacker: Move windows up the stack manually (super+K/J)
+-Shiftview: Cycle through tags (super+semicolon/super+apostrophe;)
+-ShiftTag: Move windows to prev/next tag (supet+shift+semicolon/super+shift+apostrophe
 
 ## Requirements
 
