@@ -7,6 +7,7 @@ I've added the following patches
 -Stacker: Move windows up the stack manually (super+K/J)
 -Shiftview: Cycle through tags (super+semicolon/super+apostrophe;)
 -ShiftTag: Move windows to prev/next tag (supet+shift+semicolon/super+shift+apostrophe
+-It reads colors from Xresources (works with pywal)
 
 ## Requirements
 
