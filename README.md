@@ -1,18 +1,25 @@
 ## Sofian's build of DWM - dynamic window manager
 dwm is an extremely fast, small, and dynamic window manager for X.
 I've added the following patches
--Vanitygaps: Gaps allowed across all layouts.
--Sticky: Windows can be made sticky (super+s).
--True fullscreen (super+f) and prevents focus shifting.
+-Vanitygaps: Gaps allowed across all layouts
+
+-Sticky: Windows can be made sticky (super+s)
+
+-True fullscreen (super+f) and prevents focus shifting
+
 -Stacker: Move windows up the stack manually (super+K/J)
+
 -Shiftview: Cycle through tags (super+semicolon/super+apostrophe;)
+
 -ShiftTag: Move windows to prev/next tag (supet+shift+semicolon/super+shift+apostrophe
+
+-Swallow: If a program run from a terminal would make it inoperable, it temporarily takes its place to save space.
+
 -It reads colors from Xresources (works with pywal)
 
 ## Requirements
 
 In order to build dwm you need the Xlib header files.
-
 
 ## Installation
 
