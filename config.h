@@ -82,7 +82,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,	                XK_Return, spawn,          SHCMD("$TERMINAL") },
 	{ MODKEY,	                XK_w, 	   spawn,          SHCMD("$BROWSER") },
-	{ MODKEY|ShiftMask,             XK_w, 	   spawn,          SHCMD("$TERMINAL -e nmtui") },
+	{ MODKEY|Mod1Mask,              XK_w, 	   spawn,          SHCMD("$TERMINAL -e nmtui") },
 	{ MODKEY,		        XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	STACKKEYS(MODKEY,                          focus)
